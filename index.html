@@ -139,6 +139,15 @@ a { color: inherit; }
   color: var(--near-black);
   text-decoration: none;
   letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-brand img {
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
 .nav-brand .dot {
@@ -1019,14 +1028,14 @@ a { color: inherit; }
   margin-bottom: 48px;
 }
 .footer-brand {
-  font-family: var(--display);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--ivory);
   margin-bottom: 18px;
-  letter-spacing: 0.01em;
+  line-height: 0;
 }
-.footer-brand .dot { color: var(--gold); }
+.footer-brand img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
 
 .footer-desc {
   font-size: 14.5px;
@@ -1153,7 +1162,10 @@ a { color: inherit; }
 </div>
 
 <nav class="nav" aria-label="Primary">
-  <a href="#top" class="nav-brand">Shufola<span class="dot">·</span></a>
+  <a href="#top" class="nav-brand" aria-label="Shufola — home">
+    <img src="content/assets/shufola-logo-200.webp" alt="" width="200" height="260" loading="eager" decoding="async">
+    <span>Shufola<span class="dot">·</span></span>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">Origin</a></li>
     <li><a href="#products">Products</a></li>
@@ -1636,7 +1648,7 @@ a { color: inherit; }
   <div class="footer-inner">
     <div class="footer-grid">
       <div>
-        <p class="footer-brand">Shufola<span class="dot">·</span></p>
+        <p class="footer-brand"><img src="content/assets/shufola-logo-400.webp" alt="Shufola Multi Products Ltd" width="400" height="520" loading="lazy" decoding="async"></p>
         <p class="footer-desc">Shufola Multi Products Ltd — Processor and Exporter of Sesame Seeds, Sesame Oil, and Sesame Oil Cake. Direct from Shirajgonj, Bangladesh.</p>
       </div>
       <div class="footer-col">
