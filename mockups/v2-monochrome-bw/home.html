@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-v2">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shufola Multi Products Ltd — Bangladesh's specialist sesame oil manufacturer and exporter. Crude sesame oil, SGS-tested, export-ready.">
+<meta property="og:title" content="Shufola Multi Products Ltd — Sesame Oil Manufacturer & Exporter">
+<meta property="og:type" content="website">
+<meta name="view-transition" content="same-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../content/fonts.css">
+<title>Shufola Multi Products Ltd — Sesame Oil Manufacturer & Exporter, Bangladesh</title>
+<style>
+:root {
+  --ivory: #F5F2EA;
+  --bone: #EDE7DA;
+  --ink: #1A1814;
+  --near-black: #0F0F0E;
+  --rule: #D4CFC2;
+  --gold: #B08D57;
+  --gold-deep: #8F7345;
+  --muted-ink: #4A4540;
+}
+
+@property --count {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body.theme-v2 {
+  font-family: var(--body);
+  background: var(--ivory);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--gold); color: var(--ivory); }
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  color: var(--near-black);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+
+/* B&W photography treatment */
+.photo-bw img { filter: grayscale(1) contrast(1.06); }
+.photo-bw-warm img { filter: grayscale(1) contrast(1.06) sepia(0.07); }
+
+/* Small-caps eyebrow */
+.eyebrow {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+}
+
+.eyebrow-gold {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+/* Gold hairline */
+.hairline-gold {
+  border: 0;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.65;
+}
+
+.hairline-rule {
+  border: 0;
+  height: 1px;
+  background: var(--rule);
+}
+
+/* ─── NAV ─── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(24px, 5vw, 80px);
+  background: rgba(245, 242, 234, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.nav-brand {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--near-black);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.nav-brand .dot {
+  color: var(--gold);
+  margin: 0 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted-ink);
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+
+.nav-links a:hover { color: var(--near-black); }
+
+.nav-links .cta {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+}
+.nav-links .cta:hover { color: var(--gold-deep); }
+
+.menu-btn { display: none; background: none; border: none; cursor: pointer; }
+.menu-btn span { display: block; width: 22px; height: 1.5px; background: var(--near-black); margin: 5px 0; }
+
+/* ─── HERO ─── split 55/45 ─── */
+.hero {
+  padding-top: 72px;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  min-height: 92vh;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px clamp(28px, 5vw, 96px) 72px clamp(28px, 5vw, 96px);
+  position: relative;
+}
+
+.hero-sub {
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: rise 0.9s 0.15s forwards;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 0.98;
+  color: var(--near-black);
+  margin-bottom: 44px;
+  max-width: 720px;
+  opacity: 0;
+  animation: rise 0.9s 0.32s forwards;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-rule {
+  width: 64px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 36px;
+  opacity: 0;
+  animation: rise 0.9s 0.42s forwards;
+}
+
+.hero-body {
+  font-size: 17px;
+  color: var(--muted-ink);
+  max-width: 480px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: rise 0.9s 0.52s forwards;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  opacity: 0;
+  animation: rise 0.9s 0.7s forwards;
+}
+
+.btn-fill {
+  padding: 15px 36px;
+  background: var(--near-black);
+  color: var(--ivory);
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+  border: 1px solid var(--near-black);
+}
+.btn-fill:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+
+.btn-ghost {
+  padding: 15px 2px;
+  color: var(--near-black);
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid var(--near-black);
+  transition: color 0.3s, border-color 0.3s;
+}
+.btn-ghost:hover { color: var(--gold-deep); border-color: var(--gold); }
+
+.hero-img {
+  position: relative;
+  overflow: hidden;
+  background: var(--bone);
+}
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-img figcaption {
+  position: absolute;
+  left: 24px; bottom: 24px;
+  color: var(--ivory);
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: rgba(15,15,14,0.55);
+  padding: 8px 12px;
+  backdrop-filter: blur(6px);
+}
+
+/* ─── STATS BAND ─── full-width hairline-gold band ─── */
+.stats-band {
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding: 72px clamp(28px, 5vw, 96px);
+  background: var(--ivory);
+}
+.stats-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+.stat {
+  border-left: 1px solid var(--rule);
+  padding-left: 32px;
+}
+.stat:first-child { border-left: none; padding-left: 0; }
+
+.stat-num {
+  font-family: var(--display);
+  font-size: clamp(48px, 5vw, 64px);
+  font-weight: 400;
+  color: var(--near-black);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.heritage-num {
+  --count: 15;
+  counter-reset: n var(--count);
+  display: inline-block;
+}
+.heritage-num::after {
+  content: counter(n) "+";
+}
+@supports (animation-timeline: view()) {
+  .heritage-num {
+    animation: count-up linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 60%;
+  }
+  @keyframes count-up {
+    from { --count: 0; }
+    to { --count: 15; }
+  }
+}
+@supports not (animation-timeline: view()) {
+  .heritage-num::after { content: "15+"; }
+}
+
+.stat-label {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+}
+
+/* ─── SECTION SCAFFOLD ─── */
+.sec {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 132px clamp(28px, 5vw, 96px);
+}
+
+.sec-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+  align-items: baseline;
+  margin-bottom: 72px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sec-numeral {
+  font-family: var(--display);
+  font-size: clamp(48px, 6vw, 72px);
+  color: var(--gold);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.sec-title h2 {
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+}
+
+.sec-title .sec-eyebrow { display: block; margin-bottom: 12px; }
+
+.sec-title h2 em {
+  font-style: italic;
+  color: var(--near-black);
+}
+
+/* ─── ABOUT ─── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 96px;
+}
+
+.about-narrative p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--muted-ink);
+  margin-bottom: 28px;
+  max-width: 620px;
+}
+
+.about-narrative p:first-child::first-letter {
+  font-family: var(--display);
+  font-size: 64px;
+  float: left;
+  line-height: 0.85;
+  margin: 6px 12px 0 0;
+  color: var(--near-black);
+  font-weight: 700;
+}
+
+.about-locations {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 40px;
+  border-left: 1px solid var(--rule);
+}
+
+.a-loc h4 {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 10px;
+}
+
+.a-loc h4 span { color: var(--muted-ink); font-weight: 400; }
+
+.a-loc-title {
+  font-family: var(--display);
+  font-size: 22px;
+  color: var(--near-black);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.a-loc p {
+  font-size: 14.5px;
+  color: var(--muted-ink);
+  line-height: 1.65;
+}
+
+/* ─── ORIGIN MAP ─── */
+.origin-map-wrap {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--bone);
+}
+.origin-map-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px clamp(28px, 5vw, 96px);
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 88px;
+  align-items: center;
+}
+
+.origin-map-text .sec-numeral { font-size: 44px; margin-bottom: 16px; display: block; }
+
+.origin-map-text h2 {
+  font-size: clamp(32px, 3.8vw, 48px);
+  font-weight: 400;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+
+.origin-map-text h2 em { font-style: italic; }
+
+.origin-map-text p {
+  font-size: 16px;
+  color: var(--muted-ink);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.origin-map-text .map-note {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--near-black);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding: 22px 0;
+  margin-top: 32px;
+  line-height: 1.4;
+}
+
+.origin-map-svg {
+  border: 1px solid var(--rule);
+  padding: 32px;
+  background: var(--ivory);
+}
+.origin-map-svg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── PRODUCTS (asymmetric 2-col) ─── */
+.prods-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 56px 40px;
+}
+
+.pr {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pr.pr-large { grid-column: span 4; }
+.pr.pr-small { grid-column: span 2; }
+.pr.pr-half  { grid-column: span 3; }
+
+.pr-num {
+  font-family: var(--display);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 22px;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.pr-img {
+  aspect-ratio: 4 / 3;
+  background: var(--bone);
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 1px solid var(--rule);
+  position: relative;
+}
+.pr.pr-large .pr-img { aspect-ratio: 16 / 10; }
+.pr.pr-small .pr-img { aspect-ratio: 3 / 4; }
+
+.pr-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s ease;
+}
+.pr:hover .pr-img img { transform: scale(1.03); }
+
+.pr-img.is-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pr-img.is-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px dashed var(--rule);
+}
+.pr-img.is-placeholder span {
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+  z-index: 1;
+}
+
+.pr h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.pr.pr-large h3 { font-size: 34px; }
+
+.pr p {
+  font-size: 15px;
+  color: var(--muted-ink);
+  line-height: 1.7;
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+.pr-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.pr-tag {
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+  padding: 6px 10px;
+  border: 1px solid var(--rule);
+}
+
+.pr-spec {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  text-decoration: none;
+  margin-top: auto;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+  align-self: flex-start;
+}
+.pr-spec:hover { border-bottom-style: dotted; border-bottom-color: var(--gold); }
+.pr-spec[aria-disabled="true"] { color: var(--muted-ink); cursor: default; }
+
+.pr-core-badge {
+  position: absolute;
+  top: 0; right: 0;
+  font-family: var(--body);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ivory);
+  background: var(--gold);
+  padding: 6px 12px;
+}
+
+/* ─── VIDEO / PULL QUOTE ─── */
+.vid-sec {
+  max-width: 1080px;
+  text-align: center;
+}
+.pull-quote {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(30px, 3.6vw, 44px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--near-black);
+  letter-spacing: -0.01em;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding: 56px 24px;
+  margin: 0 auto 48px;
+  max-width: 900px;
+}
+.pull-quote-mark {
+  color: var(--gold);
+  font-size: 1.2em;
+  line-height: 0;
+  vertical-align: -0.2em;
+  margin: 0 4px;
+}
+.pull-quote-cite {
+  font-family: var(--body);
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+  display: block;
+  margin-top: 28px;
+}
+
+.vid-frame {
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: var(--bone);
+  border: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.vid-frame::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid var(--rule);
+}
+.vid-frame span {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+  z-index: 1;
+}
+.vid-frame .play-mark {
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.vid-frame .play-mark::after {
+  content: '';
+  width: 0; height: 0;
+  border-left: 14px solid var(--gold);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  margin-left: 4px;
+}
+
+/* ─── PROCESS (vertical column, numbered rows) ─── */
+.proc-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+}
+.proc-step {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 56px;
+  padding: 44px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+.proc-num {
+  font-family: var(--display);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.proc-body h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+.proc-body p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--muted-ink);
+  max-width: 720px;
+}
+
+.facility-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 72px;
+}
+.facility-img {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  position: relative;
+}
+.facility-img img { width: 100%; height: 100%; object-fit: cover; }
+.facility-img figcaption {
+  position: absolute;
+  left: 0; bottom: 0; right: 0;
+  padding: 14px 18px;
+  background: linear-gradient(to top, rgba(15,15,14,0.72), transparent);
+  color: var(--ivory);
+  font-family: var(--body);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Figure-reveal on full-bleed photos */
+@supports (animation-timeline: view()) {
+  .facility-img, .hero-img, .pr-img {
+    animation: figure-reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  @keyframes figure-reveal {
+    from { clip-path: inset(0 0 100% 0); }
+    to   { clip-path: inset(0); }
+  }
+}
+
+/* ─── EXPORT (editorial 2-col with hairlines) ─── */
+.exp-wrap { background: var(--ivory); }
+.exp-grid {
+  columns: 2;
+  column-gap: 72px;
+  column-rule: 1px solid var(--rule);
+}
+.exp-item {
+  break-inside: avoid;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+  display: block;
+}
+.exp-item:last-child { border-bottom: none; }
+
+.exp-item .exp-num {
+  font-family: var(--display);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  display: block;
+}
+.exp-item h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+.exp-item p {
+  font-size: 15px;
+  color: var(--muted-ink);
+  line-height: 1.7;
+}
+
+/* ─── CERTS BAND ─── dark near-black ─── */
+.certs-band {
+  background: var(--near-black);
+  color: var(--ivory);
+  padding: 64px clamp(28px, 5vw, 96px);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+.certs-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.cert-mark {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.cert-mark svg {
+  width: 48px;
+  height: 48px;
+  display: block;
+  flex-shrink: 0;
+}
+.cert-mark .cert-label {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ivory);
+  letter-spacing: 0.01em;
+}
+.cert-sep {
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* ─── CONTACT ─── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 88px;
+  align-items: start;
+}
+
+.contact-copy h3 {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+.contact-copy p {
+  font-size: 16px;
+  color: var(--muted-ink);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 460px;
+}
+.contact-detail {
+  font-family: var(--body);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-top: 10px;
+}
+.contact-detail a { color: var(--near-black); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+
+.c-form {
+  background: var(--bone);
+  padding: 44px clamp(24px, 3vw, 48px);
+  border: 1px solid var(--rule);
+}
+.fr { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
+.ff { display: flex; flex-direction: column; margin-bottom: 18px; }
+.ff label {
+  font-family: var(--body);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-ink);
+  margin-bottom: 8px;
+}
+.ff input, .ff select, .ff textarea {
+  font-family: var(--body);
+  font-size: 15px;
+  color: var(--near-black);
+  background: var(--ivory);
+  border: 1px solid var(--rule);
+  padding: 14px 16px;
+  width: 100%;
+  transition: border-color 0.25s;
+}
+.ff input:focus, .ff select:focus, .ff textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.ff textarea { min-height: 120px; resize: vertical; font-family: var(--body); }
+.f-btn {
+  padding: 16px 36px;
+  background: var(--near-black);
+  color: var(--ivory);
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid var(--near-black);
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+  width: 100%;
+}
+.f-btn:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+
+/* ─── FOOTER ─── */
+.footer {
+  background: var(--near-black);
+  color: rgba(245, 242, 234, 0.72);
+  padding: 72px clamp(28px, 5vw, 96px) 36px;
+  border-top: 1px solid var(--gold);
+}
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 48px;
+}
+.footer-brand {
+  font-family: var(--display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ivory);
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+}
+.footer-brand .dot { color: var(--gold); }
+
+.footer-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  max-width: 360px;
+  color: rgba(245, 242, 234, 0.62);
+}
+
+.footer-col h4 {
+  font-family: var(--body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a {
+  color: rgba(245, 242, 234, 0.72);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footer-col a:hover { color: var(--ivory); }
+
+.footer-bottom {
+  padding-top: 28px;
+  border-top: 1px solid rgba(176, 141, 87, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: rgba(245, 242, 234, 0.52);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ─── REVEAL ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.3s;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* View transition */
+::view-transition-old(crude-oil-hero),
+::view-transition-new(crude-oil-hero) {
+  animation-duration: 0.55s;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-img { min-height: 420px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
+  .stat:nth-child(3) { border-left: none; padding-left: 0; }
+  .about-grid { grid-template-columns: 1fr; gap: 56px; }
+  .about-locations { padding-left: 0; border-left: none; border-top: 1px solid var(--rule); padding-top: 32px; }
+  .origin-map-inner { grid-template-columns: 1fr; gap: 48px; padding: 80px 24px; }
+  .prods-grid { grid-template-columns: repeat(2, 1fr); gap: 48px 32px; }
+  .pr.pr-large, .pr.pr-small, .pr.pr-half { grid-column: span 2; }
+  .proc-step { grid-template-columns: 72px 1fr; gap: 28px; }
+  .proc-num { font-size: 40px; }
+  .exp-grid { columns: 1; }
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .facility-strip { grid-template-columns: 1fr; gap: 16px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .sec { padding: 96px 28px; }
+  .nav-links { display: none; }
+  .menu-btn { display: block; }
+}
+@media (max-width: 560px) {
+  .stats-grid { grid-template-columns: 1fr; gap: 32px; }
+  .stat { border-left: none; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .stat:first-child { border-top: none; padding-top: 0; }
+  .prods-grid { grid-template-columns: 1fr; }
+  .pr.pr-large, .pr.pr-small, .pr.pr-half { grid-column: span 1; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .sec-head { grid-template-columns: 1fr; gap: 14px; }
+}
+</style>
+</head>
+<body class="theme-v2">
+
+<nav class="nav" aria-label="Primary">
+  <a href="#top" class="nav-brand">Shufola<span class="dot">·</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Origin</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#export">Export</a></li>
+    <li><a href="#contact" class="cta">Request Quote</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <p class="hero-sub eyebrow-gold">Sesame Oil — Sirajgonj, Bangladesh</p>
+    <h1>Pure sesame,<br><em>honestly made</em>.</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-body">From the fertile plains of Sirajgonj to markets across Asia — we manufacture and export premium sesame oil with the care and traceability that serious buyers expect.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-fill">Request a Quote</a>
+      <a href="#products" class="btn-ghost">View Products</a>
+    </div>
+  </div>
+  <figure class="hero-img photo-bw-warm">
+    <picture>
+      <source srcset="../../content/assets/p1455288.webp" type="image/webp">
+      <img src="../../content/assets/p1455288.webp" alt="Shufola factory exterior — three cylindrical sesame-oil storage silos at Ullapara, Sirajgonj">
+    </picture>
+    <figcaption>Ullapara Facility · Sirajgonj</figcaption>
+  </figure>
+</header>
+
+<section class="stats-band" aria-label="Company at a glance">
+  <div class="stats-grid">
+    <div class="stat">
+      <span class="stat-num heritage-num" aria-label="15 plus"></span>
+      <span class="stat-label">Export Destinations</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">CFR</span>
+      <span class="stat-label">Incoterms Capability</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">L/C</span>
+      <span class="stat-label">Payment Supported</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">24h</span>
+      <span class="stat-label">Quote Response</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="sec-head reveal">
+    <span class="sec-numeral">I.</span>
+    <div class="sec-title">
+      <span class="sec-eyebrow eyebrow">Section 01 · Origin</span>
+      <h2>A specialist house, built<br>around one crop.</h2>
+    </div>
+  </div>
+  <div class="about-grid">
+    <div class="about-narrative reveal">
+      <p>Shufola Multi Products Ltd is a specialist sesame oil manufacturer and exporter headquartered in Dhaka. Our entire operation is purpose-built around sesame — from procurement through processing to international shipment.</p>
+      <p>Our factory in Ullapara, Sirajgonj sits at the heart of one of Bangladesh's most fertile sesame-growing regions. With a port office in Chattogram, we maintain direct control over logistics, documentation, and quality at every stage.</p>
+      <p>Every batch is SGS-tested. Every shipment is fully documented. Every buyer gets a focused, expert partner.</p>
+    </div>
+    <aside class="about-locations reveal" aria-label="Company locations">
+      <div class="a-loc">
+        <h4>Head Office <span>· Dhaka</span></h4>
+        <p>Commercial operations, buyer relations, export management.</p>
+      </div>
+      <div class="a-loc">
+        <h4>Port Office <span>· Chattogram</span></h4>
+        <p>Shipping coordination, C&amp;F liaison, documentation.</p>
+      </div>
+      <div class="a-loc">
+        <h4>Factory <span>· Ullapara, Sirajgonj</span></h4>
+        <p>Oil crushing facility, seed processing, cleaning, drying, and quality laboratory.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="origin-map-wrap" id="origin-map">
+  <div class="origin-map-inner">
+    <div class="origin-map-text reveal">
+      <span class="sec-numeral">I<span style="letter-spacing:0;">.</span><small style="font-size:0.5em; vertical-align:super; font-style:normal; color:var(--muted-ink);">a</small></span>
+      <p class="eyebrow" style="margin-bottom:14px;">The short inland route</p>
+      <h2>From <em>Sirajgonj</em><br>to the world.</h2>
+      <p>Sourced from the Sirajgonj sesame belt — direct relationships with farms across the district. Every lot travels a short inland route to our Ullapara crushing line, then moves down to Chattogram for onward shipment.</p>
+      <p class="map-note">Two points. One short inland road.<br>Every lot accounted for.</p>
+    </div>
+    <div class="origin-map-svg reveal">
+      <svg viewBox="0 0 600 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized map showing Sirajgonj district in central Bangladesh and Chattogram port on the southeast coast">
+        <!-- country outline (monochrome, dashed) -->
+        <path d="M180 70 L260 60 L340 65 L420 80 L450 140 L465 210 L470 280 L455 340 L430 390 L390 420 L330 430 L270 425 L220 410 L190 370 L170 310 L160 230 L158 160 Z"
+          fill="none" stroke="#0F0F0E" stroke-width="1.2" stroke-dasharray="2 5" opacity="0.55" />
+        <!-- river hint -->
+        <path d="M220 90 Q260 180 290 220 T340 340 Q370 380 400 400"
+          fill="none" stroke="#4A4540" stroke-width="0.8" stroke-dasharray="1 4" opacity="0.45" />
+        <!-- connector: Ullapara/Sirajgonj to Chattogram port (gold) -->
+        <path d="M292 198 Q360 270 418 368"
+          fill="none" stroke="#B08D57" stroke-width="1.2" stroke-dasharray="3 5" opacity="0.9" />
+        <!-- Sirajgonj pin (north-central, gold rings) -->
+        <circle cx="292" cy="198" r="24" fill="none" stroke="#B08D57" stroke-width="0.7" opacity="0.4" />
+        <circle cx="292" cy="198" r="14" fill="none" stroke="#B08D57" stroke-width="1" opacity="0.75" />
+        <circle cx="292" cy="198" r="6" fill="#B08D57" />
+        <text x="312" y="195" font-family="'Playfair Display', serif" font-style="italic" font-size="22" font-weight="700" fill="#0F0F0E">Sirajgonj</text>
+        <text x="312" y="214" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.6" fill="#4A4540">SESAME BELT · ULLAPARA</text>
+        <!-- Chattogram port (south-east, near-black marker) -->
+        <circle cx="418" cy="368" r="5" fill="#0F0F0E" />
+        <circle cx="418" cy="368" r="12" fill="none" stroke="#0F0F0E" stroke-width="0.7" opacity="0.4" />
+        <text x="432" y="366" font-family="'Playfair Display', serif" font-style="italic" font-size="17" fill="#1A1814">Chattogram</text>
+        <text x="432" y="381" font-family="Inter, sans-serif" font-size="9.5" letter-spacing="1.4" fill="#4A4540">PORT</text>
+        <!-- compass -->
+        <g transform="translate(505,92)" opacity="0.45">
+          <line x1="0" y1="-20" x2="0" y2="20" stroke="#4A4540" stroke-width="0.7" />
+          <line x1="-20" y1="0" x2="20" y2="0" stroke="#4A4540" stroke-width="0.7" />
+          <text x="-4" y="-24" font-family="'Playfair Display', serif" font-style="italic" font-size="12" fill="#4A4540">N</text>
+          <circle cx="0" cy="0" r="2" fill="#B08D57" />
+        </g>
+        <!-- scale marker -->
+        <g transform="translate(180,440)" opacity="0.5">
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#4A4540" stroke-width="0.8" />
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="#4A4540" stroke-width="0.8" />
+          <line x1="80" y1="-4" x2="80" y2="4" stroke="#4A4540" stroke-width="0.8" />
+          <text x="0" y="16" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.2" fill="#4A4540">~ 250 KM</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="sec">
+  <div class="sec-head reveal">
+    <span class="sec-numeral">II.</span>
+    <div class="sec-title">
+      <span class="sec-eyebrow eyebrow">Section 02 · Products</span>
+      <h2>Sesame oil &amp; seeds,<br><em>export grade</em>.</h2>
+    </div>
+  </div>
+  <p class="reveal" style="max-width:620px; margin-bottom:64px; font-size:16.5px; color:var(--muted-ink); line-height:1.8;">Oil products first — our core business. Every product SGS-tested and export-documented.</p>
+
+  <div class="prods-grid">
+    <!-- Crude Sesame Oil — LARGE feature card -->
+    <a href="products/crude-sesame-oil.html" class="pr pr-large reveal" style="text-decoration:none;">
+      <span class="pr-core-badge">Core Product</span>
+      <p class="pr-num">I.</p>
+      <figure class="pr-img photo-bw-warm" style="view-transition-name: crude-oil-hero;">
+        <picture>
+          <source srcset="../../content/assets/dsc01084.webp" type="image/webp">
+          <img src="../../content/assets/dsc01084.webp" alt="Amber crude sesame oil streaming from extraction taps at the Ullapara crushing line">
+        </picture>
+      </figure>
+      <h3>Crude Sesame Oil</h3>
+      <p>Crushed from carefully selected seeds. Deep golden color, rich natural aroma. Our core export product for refineries and food manufacturers.</p>
+      <div class="pr-tags"><span class="pr-tag">Oil Crushing</span><span class="pr-tag">Bulk Export</span><span class="pr-tag">Flexitank</span></div>
+      <span class="pr-spec">Read spec sheet &rarr;</span>
+    </a>
+
+    <!-- Refined Sesame Oil — small portrait -->
+    <div class="pr pr-small reveal">
+      <p class="pr-num">II.</p>
+      <figure class="pr-img is-placeholder"><span>Product photograph</span></figure>
+      <h3>Refined Sesame Oil</h3>
+      <p>Crystal-clear with a light, clean taste. Suitable for cooking, food processing, and consumer-grade products.</p>
+      <div class="pr-tags"><span class="pr-tag">Food Grade</span><span class="pr-tag">Light Color</span><span class="pr-tag">Neutral Taste</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+
+    <!-- Brown Seeds -->
+    <div class="pr pr-half reveal">
+      <p class="pr-num">III.</p>
+      <figure class="pr-img photo-bw">
+        <picture>
+          <source srcset="../../content/assets/dsc00602.webp" type="image/webp">
+          <img src="../../content/assets/dsc00602.webp" alt="Metal scoop resting on a bed of brown sesame seeds spread across the drying floor">
+        </picture>
+      </figure>
+      <h3>Brown Sesame Seeds</h3>
+      <p>Double-skin variety. Cleaned and dried to optimal moisture levels. Versatile for oil extraction, bakery, and confectionery applications.</p>
+      <div class="pr-tags"><span class="pr-tag">Double Skin</span><span class="pr-tag">Cleaned &amp; Dried</span><span class="pr-tag">Export Ready</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+
+    <!-- Black Seeds -->
+    <div class="pr pr-half reveal">
+      <p class="pr-num">IV.</p>
+      <figure class="pr-img photo-bw">
+        <picture>
+          <source srcset="../../content/assets/black-sesame-seeds-double-skin.webp" type="image/webp">
+          <img src="../../content/assets/black-sesame-seeds-double-skin.webp" alt="Macro view of double-skin black sesame seeds, uniform grade">
+        </picture>
+      </figure>
+      <h3>Black Sesame Seeds</h3>
+      <p>Double-skin variety. Cleaned and dried to preserve quality and shelf life. Rich in nutrients, prized in East Asian cuisines and health food markets.</p>
+      <div class="pr-tags"><span class="pr-tag">Double Skin</span><span class="pr-tag">Cleaned &amp; Dried</span><span class="pr-tag">High Nutrition</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+
+    <!-- Yellow Seeds -->
+    <div class="pr pr-small reveal">
+      <p class="pr-num">V.</p>
+      <figure class="pr-img is-placeholder"><span>Product photograph</span></figure>
+      <h3>Yellow Sesame Seeds</h3>
+      <p>Double-skin variety. Cleaned and dried for uniform quality. Mild flavor profile suited for bakery, confectionery, and tahini production.</p>
+      <div class="pr-tags"><span class="pr-tag">Double Skin</span><span class="pr-tag">Cleaned &amp; Dried</span><span class="pr-tag">Mild Flavor</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+
+    <!-- White Mountain Seeds -->
+    <div class="pr pr-large reveal">
+      <p class="pr-num">VI.</p>
+      <figure class="pr-img photo-bw">
+        <picture>
+          <source srcset="../../content/assets/white-sesame-seeds-single-skin.webp" type="image/webp">
+          <img src="../../content/assets/white-sesame-seeds-single-skin.webp" alt="Conical pile of husked single-skin white sesame seeds in soft daylight">
+        </picture>
+      </figure>
+      <h3>White Mountain Seeds</h3>
+      <p>Single-skin variety sourced from highland regions. Cleaned and dried. Smooth texture with a delicate nutty flavor for premium food applications.</p>
+      <div class="pr-tags"><span class="pr-tag">Single Skin</span><span class="pr-tag">Cleaned &amp; Dried</span><span class="pr-tag">Premium</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+
+    <!-- Black Mountain Seeds -->
+    <div class="pr pr-half reveal">
+      <p class="pr-num">VII.</p>
+      <figure class="pr-img is-placeholder"><span>Product photograph</span></figure>
+      <h3>Black Mountain Seeds</h3>
+      <p>Single-skin variety from highland cultivation. Cleaned and dried. Distinctive flavor for specialty and traditional food products.</p>
+      <div class="pr-tags"><span class="pr-tag">Single Skin</span><span class="pr-tag">Cleaned &amp; Dried</span><span class="pr-tag">Specialty</span></div>
+      <a href="#" aria-disabled="true" class="pr-spec">Spec sheet — available on request</a>
+    </div>
+  </div>
+</section>
+
+<section id="vid" class="sec vid-sec">
+  <blockquote class="pull-quote reveal">
+    <span class="pull-quote-mark">“</span>Every batch is SGS-tested. Every shipment is fully documented. Every buyer gets a focused, expert partner.<span class="pull-quote-mark">”</span>
+    <cite class="pull-quote-cite">— Shufola Export Desk · Dhaka</cite>
+  </blockquote>
+  <figure class="vid-frame reveal" aria-label="Corporate video — coming soon">
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px;">
+      <div class="play-mark" aria-hidden="true"></div>
+      <span>Corporate video · available on request</span>
+    </div>
+  </figure>
+</section>
+
+<section id="process" class="sec">
+  <div class="sec-head reveal">
+    <span class="sec-numeral">III.</span>
+    <div class="sec-title">
+      <span class="sec-eyebrow eyebrow">Section 03 · Process</span>
+      <h2>From field to<br><em>flexitank</em>.</h2>
+    </div>
+  </div>
+
+  <div class="proc-steps">
+    <div class="proc-step reveal">
+      <span class="proc-num">I.</span>
+      <div class="proc-body">
+        <h3>Seed Sourcing</h3>
+        <p>Selected from trusted farms across the Sirajgonj sesame belt for premium raw material quality.</p>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <span class="proc-num">II.</span>
+      <div class="proc-body">
+        <h3>Cleaning &amp; Drying</h3>
+        <p>Multi-stage mechanical cleaning followed by drying to optimal moisture levels for quality preservation.</p>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <span class="proc-num">III.</span>
+      <div class="proc-body">
+        <h3>Oil Crushing</h3>
+        <p>Selected seeds crushed to extract crude sesame oil, preserving natural aroma and nutrients.</p>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <span class="proc-num">IV.</span>
+      <div class="proc-body">
+        <h3>Quality Testing</h3>
+        <p>SGS-certified laboratory testing for acidity, moisture, color, and purity.</p>
+      </div>
+    </div>
+    <div class="proc-step reveal">
+      <span class="proc-num">V.</span>
+      <div class="proc-body">
+        <h3>Pack &amp; Ship</h3>
+        <p>Packed in flexitank, drums, or PP oven bags. Full export documentation from LC to Bill of Lading.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="facility-strip reveal" aria-label="Facility photography">
+    <figure class="facility-img photo-bw">
+      <picture>
+        <source srcset="../../content/assets/dsc01412.webp" type="image/webp">
+        <img src="../../content/assets/dsc01412.webp" alt="Bühler-branded seed-cleaning machine on the raised catwalk inside the Ullapara facility">
+      </picture>
+      <figcaption>Cleaning line · Ullapara</figcaption>
+    </figure>
+    <figure class="facility-img photo-bw-warm">
+      <picture>
+        <source srcset="../../content/assets/dsc00904.webp" type="image/webp">
+        <img src="../../content/assets/dsc00904.webp" alt="Overhead view into a sieve full of brown sesame seeds with chaff in motion">
+      </picture>
+      <figcaption>Sieving · Chaff in motion</figcaption>
+    </figure>
+    <figure class="facility-img photo-bw">
+      <picture>
+        <source srcset="../../content/assets/dsc01216.webp" type="image/webp">
+        <img src="../../content/assets/dsc01216.webp" alt="Quality-control technician with titration setup in the Ullapara laboratory">
+      </picture>
+      <figcaption>Titration · Quality lab</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="export" class="sec exp-wrap">
+  <div class="sec-head reveal">
+    <span class="sec-numeral">IV.</span>
+    <div class="sec-title">
+      <span class="sec-eyebrow eyebrow">Section 04 · Export</span>
+      <h2>Documented, documented,<br><em>documented</em>.</h2>
+    </div>
+  </div>
+
+  <div class="exp-grid reveal">
+    <div class="exp-item">
+      <span class="exp-num">i.</span>
+      <h3>Documentation</h3>
+      <p>Bill of Lading, Certificate of Origin, Phytosanitary, Health Certificate, and all LC-required documents prepared in-house.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-num">ii.</span>
+      <h3>Shipping</h3>
+      <p>Partnerships with major shipping lines. Flexitank for oil, standard containers for seeds. Direct access to Chattogram port.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-num">iii.</span>
+      <h3>Banking &amp; LC</h3>
+      <p>Established banking relationships. Expert LC negotiation, amendment handling, and compliance documentation.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-num">iv.</span>
+      <h3>Quality Assurance</h3>
+      <p>Every shipment tested by SGS Bangladesh. Full compliance with buyer specifications and food safety standards.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-num">v.</span>
+      <h3>Flexible Packaging</h3>
+      <p>Flexitank, drums, and PP oven bags. Private labeling and custom packaging available on request.</p>
+    </div>
+    <div class="exp-item">
+      <span class="exp-num">vi.</span>
+      <h3>End-to-End Service</h3>
+      <p>From proforma invoice to final shipment — C&amp;F coordination, freight booking, and regulatory compliance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="certs-band" aria-label="Certifications">
+  <div class="certs-inner">
+    <!-- SGS — monogrammed disc -->
+    <div class="cert-mark">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="none" stroke="#B08D57" stroke-width="1.2"/>
+        <circle cx="24" cy="24" r="17" fill="none" stroke="#B08D57" stroke-width="0.6" opacity="0.5"/>
+        <text x="24" y="28" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="700" font-size="12" fill="#F5F2EA" letter-spacing="1">SGS</text>
+      </svg>
+      <span class="cert-label">SGS Tested</span>
+    </div>
+    <span class="cert-sep">·</span>
+    <!-- Phyto — triangular stamp -->
+    <div class="cert-mark">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="24,4 44,42 4,42" fill="none" stroke="#B08D57" stroke-width="1.2"/>
+        <polygon points="24,10 38,38 10,38" fill="none" stroke="#B08D57" stroke-width="0.6" opacity="0.5"/>
+        <circle cx="24" cy="28" r="4" fill="#B08D57"/>
+        <line x1="24" y1="16" x2="24" y2="24" stroke="#B08D57" stroke-width="1.2"/>
+      </svg>
+      <span class="cert-label">Phytosanitary</span>
+    </div>
+    <span class="cert-sep">·</span>
+    <!-- Health — hex seal -->
+    <div class="cert-mark">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="24,3 42,13 42,35 24,45 6,35 6,13" fill="none" stroke="#B08D57" stroke-width="1.2"/>
+        <polygon points="24,8 37,15.5 37,32.5 24,40 11,32.5 11,15.5" fill="none" stroke="#B08D57" stroke-width="0.5" opacity="0.5"/>
+        <path d="M17 24 L22 29 L32 18" fill="none" stroke="#B08D57" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="cert-label">Health Certificate</span>
+    </div>
+    <span class="cert-sep">·</span>
+    <!-- Origin — oval roundel -->
+    <div class="cert-mark">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="24" cy="24" rx="22" ry="16" fill="none" stroke="#B08D57" stroke-width="1.2"/>
+        <ellipse cx="24" cy="24" rx="17" ry="11.5" fill="none" stroke="#B08D57" stroke-width="0.5" opacity="0.5"/>
+        <text x="24" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-weight="500" font-size="5" fill="#F5F2EA" letter-spacing="1">MADE IN</text>
+        <text x="24" y="30" text-anchor="middle" font-family="'Playfair Display', serif" font-style="italic" font-size="10" fill="#F5F2EA">BD</text>
+      </svg>
+      <span class="cert-label">Certificate of Origin</span>
+    </div>
+    <span class="cert-sep">·</span>
+    <!-- BB — badge cross -->
+    <div class="cert-mark">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 2 L44 12 L44 28 C44 38 34 44 24 46 C14 44 4 38 4 28 L4 12 Z" fill="none" stroke="#B08D57" stroke-width="1.2"/>
+        <path d="M24 7 L39 14.5 L39 27 C39 35 31 40 24 41.5 C17 40 9 35 9 27 L9 14.5 Z" fill="none" stroke="#B08D57" stroke-width="0.5" opacity="0.5"/>
+        <text x="24" y="28" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="700" font-size="13" fill="#F5F2EA" letter-spacing="1">BB</text>
+      </svg>
+      <span class="cert-label">BB Compliant</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="sec-head reveal">
+    <span class="sec-numeral">V.</span>
+    <div class="sec-title">
+      <span class="sec-eyebrow eyebrow">Section 05 · Contact</span>
+      <h2>Start a conversation<br>about your next <em>shipment</em>.</h2>
+    </div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-copy reveal">
+      <h3>Request a Quote</h3>
+      <p>Tell us what you need — volume, destination port, specifications, target timelines. Our export desk responds within one business day with a proforma and an honest view on what's possible.</p>
+      <p class="contact-detail">Export desk <br><a href="mailto:export@shufola.com">export@shufola.com</a></p>
+      <p class="contact-detail">Offices <br><span style="color:var(--muted-ink);">Dhaka · Chattogram · Ullapara</span></p>
+    </div>
+    <form action="#" class="c-form reveal" onsubmit="event.preventDefault(); this.querySelector('.f-btn').textContent = 'Thanks — we\'ll respond within 24h';">
+      <div class="fr">
+        <div class="ff"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
+        <div class="ff"><label>Company</label><input type="text" placeholder="Company name"></div>
+      </div>
+      <div class="fr">
+        <div class="ff"><label>Email</label><input type="email" placeholder="email@company.com" required></div>
+        <div class="ff"><label>Country</label><input type="text" placeholder="Your country"></div>
+      </div>
+      <div class="ff"><label>Product Interest</label>
+        <select>
+          <option>Crude Sesame Oil</option>
+          <option>Refined Sesame Oil</option>
+          <option>Brown Sesame Seeds</option>
+          <option>Black Sesame Seeds</option>
+          <option>Yellow Sesame Seeds</option>
+          <option>White Mountain Seeds</option>
+          <option>Black Mountain Seeds</option>
+        </select>
+      </div>
+      <div class="ff"><label>Message</label><textarea placeholder="Volume, specifications, delivery terms..."></textarea></div>
+      <button class="f-btn" type="submit">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Shufola<span class="dot">·</span></p>
+        <p class="footer-desc">Bangladesh's dedicated sesame oil manufacturer and exporter. Trusted by international buyers for consistent quality and reliable supply.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Oil Products</h4>
+        <ul>
+          <li><a href="#products">Crude Sesame Oil</a></li>
+          <li><a href="#products">Refined Sesame Oil</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sesame Seeds</h4>
+        <ul>
+          <li><a href="#products">Brown Seeds</a></li>
+          <li><a href="#products">Black Seeds</a></li>
+          <li><a href="#products">Yellow Seeds</a></li>
+          <li><a href="#products">Mountain Seeds</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#export">Export</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Shufola Multi Products Ltd. All rights reserved.</span>
+      <span>Dhaka · Chattogram · Ullapara</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // IntersectionObserver reveal — 300ms per spec
+  (function(){
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  })();
+
+  // Smooth-scroll in-page anchors (handle scroll-padding-top)
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if (id && id.length > 1) {
+        var el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', id);
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>

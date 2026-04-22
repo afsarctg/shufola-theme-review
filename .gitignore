@@ -1,0 +1,21 @@
+# Source video (652 MB — CDN-hosted, never committed)
+user-docs/*.mp4
+
+# Raw .docx source files (not served)
+user-docs/*.docx
+
+# Original JPEG source (WebP copies live under content/assets/)
+user-docs/*.jpeg
+user-docs/*Zone.Identifier
+
+# Placeholder files
+**/.gitkeep
+
+# Sandbox artifact
+preflight-v5.png
+
+# Internal CLAUDE.md (not for public repo)
+CLAUDE.md
+
+# Playwright / tool residue
+.playwright-mcp/

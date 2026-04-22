@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shufola — Theme Direction Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+  <style>
+    :root { --ink: #1A1812; --paper: #F5F2EA; --rule: #D4CFC2; --muted: #4A4235; --gold: #B08D57; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--paper); color: var(--ink); padding: 48px 24px; line-height: 1.6; }
+    .container { max-width: 1280px; margin: 0 auto; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 700; margin: 0 0 12px; letter-spacing: -0.02em; }
+    .lede { max-width: 66ch; margin: 0 0 48px; line-height: 1.7; color: var(--muted); font-size: 17px; }
+    .eyebrow { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+
+    .mockup-row { border-top: 1px solid var(--rule); padding: 48px 0; }
+    .mockup-row:last-child { border-bottom: 1px solid var(--rule); }
+    .mockup-head { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: end; margin-bottom: 28px; flex-wrap: wrap; }
+    @media (max-width: 640px) { .mockup-head { grid-template-columns: 1fr; } }
+    .mockup-title h2 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; margin: 0 0 8px; letter-spacing: -0.01em; }
+    .mockup-title h2 a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 150ms; }
+    .mockup-title h2 a:hover { border-bottom-color: var(--gold); }
+    .mockup-title p { margin: 0 0 8px; color: var(--muted); max-width: 64ch; }
+    .swatches { display: flex; gap: 6px; align-self: start; }
+    .swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.08); box-shadow: inset 0 1px 2px rgba(0,0,0,0.06); }
+    .dials { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; margin-top: 4px; }
+    .dials span { margin-right: 18px; display: inline-block; }
+    .dials b { color: var(--ink); font-weight: 600; }
+
+    .pair-label { margin: 24px 0 10px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .shot { background: #fff; border: 1px solid var(--rule); overflow: hidden; }
+    .shot-caption { padding: 10px 14px; border-bottom: 1px solid var(--rule); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; font-weight: 500; }
+    .shot img { display: block; width: 100%; height: auto; background: var(--paper); }
+
+    footer { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+    footer p { margin: 0 0 12px; max-width: 70ch; }
+    footer a { color: var(--ink); border-bottom: 1px solid var(--rule); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <p class="eyebrow">Shufola Multi Products Ltd · 2026</p>
+  <h1>Theme Direction Review</h1>
+  <p class="lede">Four directions for the Shufola site. Each mockup includes a home page and the Crude Sesame Oil product-detail page. Screenshots captured at mobile (375px), tablet (768px), and desktop (1440px). Click a mockup title to open the live working file.</p>
+
+  <div class="mockup-row">
+    <div class="mockup-head">
+      <div class="mockup-title">
+        <h2><a href="v1-wabi-sabi/home.html">V1 — Wabi-sabi editorial</a></h2>
+        <p>Refined from the sample you saw. Cormorant + Karla, clay palette, paper-grain texture, italicized emphasis. With added B2B ballast: Sirajgonj origin map, facility strip, upgraded cert marks, product-detail page with drop-cap and sticky spec sidebar.</p>
+        <p class="dials"><span>DESIGN_VARIANCE <b>3</b></span><span>MOTION <b>2</b></span><span>DENSITY <b>4</b></span></p>
+      </div>
+      <div class="swatches">
+        <span class="swatch" style="background:#EDE4D3" title="clay"></span>
+        <span class="swatch" style="background:#A0664A" title="terracotta"></span>
+        <span class="swatch" style="background:#B89840" title="ochre"></span>
+        <span class="swatch" style="background:#2A1E12" title="earth"></span>
+      </div>
+    </div>
+    <p class="pair-label">Home page</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>home</span></figcaption><img src="v1-wabi-sabi/screenshots/home-375.png" alt="V1 home mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>home</span></figcaption><img src="v1-wabi-sabi/screenshots/home-768.png" alt="V1 home tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>home</span></figcaption><img src="v1-wabi-sabi/screenshots/home-1440.png" alt="V1 home desktop"></figure>
+    </div>
+    <p class="pair-label">Product detail — Crude Sesame Oil</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>product</span></figcaption><img src="v1-wabi-sabi/screenshots/product-375.png" alt="V1 product mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>product</span></figcaption><img src="v1-wabi-sabi/screenshots/product-768.png" alt="V1 product tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>product</span></figcaption><img src="v1-wabi-sabi/screenshots/product-1440.png" alt="V1 product desktop"></figure>
+    </div>
+  </div>
+
+  <div class="mockup-row">
+    <div class="mockup-head">
+      <div class="mockup-title">
+        <h2><a href="v2-monochrome-bw/home.html">V2 — Monochrome B&amp;W + gold</a></h2>
+        <p>Eye-soothing restraint. Playfair Display + Inter. Ivory/near-black/gold. Documentary B&amp;W photography, editorial Roman-numeral section spine (I–V), scroll-driven heritage counter, View Transitions between home and product-detail. Research's top pick.</p>
+        <p class="dials"><span>DESIGN_VARIANCE <b>4</b></span><span>MOTION <b>3</b></span><span>DENSITY <b>5</b></span></p>
+      </div>
+      <div class="swatches">
+        <span class="swatch" style="background:#F5F2EA" title="ivory"></span>
+        <span class="swatch" style="background:#1A1814" title="near-black"></span>
+        <span class="swatch" style="background:#B08D57" title="gold"></span>
+        <span class="swatch" style="background:#EDE7DA" title="bone"></span>
+      </div>
+    </div>
+    <p class="pair-label">Home page</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>home</span></figcaption><img src="v2-monochrome-bw/screenshots/home-375.png" alt="V2 home mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>home</span></figcaption><img src="v2-monochrome-bw/screenshots/home-768.png" alt="V2 home tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>home</span></figcaption><img src="v2-monochrome-bw/screenshots/home-1440.png" alt="V2 home desktop"></figure>
+    </div>
+    <p class="pair-label">Product detail — Crude Sesame Oil</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>product</span></figcaption><img src="v2-monochrome-bw/screenshots/product-375.png" alt="V2 product mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>product</span></figcaption><img src="v2-monochrome-bw/screenshots/product-768.png" alt="V2 product tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>product</span></figcaption><img src="v2-monochrome-bw/screenshots/product-1440.png" alt="V2 product desktop"></figure>
+    </div>
+  </div>
+
+  <div class="mockup-row">
+    <div class="mockup-head">
+      <div class="mockup-title">
+        <h2><a href="v3-magazine-editorial/home.html">V3 — Magazine-editorial heritage</a></h2>
+        <p>New Yorker-feature-about-the-company feel. Fraunces + Inter, cream and burnt sienna. Full founder's letter with stylized signature, 3-chapter origin story with drop-caps, cartographic origin map, editorial product grid, cert credits as byline.</p>
+        <p class="dials"><span>DESIGN_VARIANCE <b>5</b></span><span>MOTION <b>4</b></span><span>DENSITY <b>6</b></span></p>
+      </div>
+      <div class="swatches">
+        <span class="swatch" style="background:#F7F1E5" title="cream"></span>
+        <span class="swatch" style="background:#FAF6EE" title="warm-white"></span>
+        <span class="swatch" style="background:#8A4A2A" title="burnt-sienna"></span>
+        <span class="swatch" style="background:#1E1A14" title="ink"></span>
+      </div>
+    </div>
+    <p class="pair-label">Home page</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>home</span></figcaption><img src="v3-magazine-editorial/screenshots/home-375.png" alt="V3 home mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>home</span></figcaption><img src="v3-magazine-editorial/screenshots/home-768.png" alt="V3 home tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>home</span></figcaption><img src="v3-magazine-editorial/screenshots/home-1440.png" alt="V3 home desktop"></figure>
+    </div>
+    <p class="pair-label">Product detail — Crude Sesame Oil</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>product</span></figcaption><img src="v3-magazine-editorial/screenshots/product-375.png" alt="V3 product mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>product</span></figcaption><img src="v3-magazine-editorial/screenshots/product-768.png" alt="V3 product tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>product</span></figcaption><img src="v3-magazine-editorial/screenshots/product-1440.png" alt="V3 product desktop"></figure>
+    </div>
+  </div>
+
+  <div class="mockup-row">
+    <div class="mockup-head">
+      <div class="mockup-title">
+        <h2><a href="v4-premium-industrial/home.html">V4 — Premium industrial clean</a></h2>
+        <p>Serious-exporter signal. Space Grotesk + Inter, paper and slate. Oversized stacked grotesk headlines, ruled dividers, metadata strips, snap-point horizontal process scroller, supply-axis origin map, data-sheet product-detail. Safest B2B read.</p>
+        <p class="dials"><span>DESIGN_VARIANCE <b>2</b></span><span>MOTION <b>2</b></span><span>DENSITY <b>5</b></span></p>
+      </div>
+      <div class="swatches">
+        <span class="swatch" style="background:#FAFAF8" title="paper"></span>
+        <span class="swatch" style="background:#F4F2ED" title="paper-warm"></span>
+        <span class="swatch" style="background:#0F0F0E" title="ink"></span>
+        <span class="swatch" style="background:#4A5159" title="slate"></span>
+      </div>
+    </div>
+    <p class="pair-label">Home page</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>home</span></figcaption><img src="v4-premium-industrial/screenshots/home-375.png" alt="V4 home mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>home</span></figcaption><img src="v4-premium-industrial/screenshots/home-768.png" alt="V4 home tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>home</span></figcaption><img src="v4-premium-industrial/screenshots/home-1440.png" alt="V4 home desktop"></figure>
+    </div>
+    <p class="pair-label">Product detail — Crude Sesame Oil</p>
+    <div class="grid">
+      <figure class="shot"><figcaption class="shot-caption"><span>375 mobile</span><span>product</span></figcaption><img src="v4-premium-industrial/screenshots/product-375.png" alt="V4 product mobile"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>768 tablet</span><span>product</span></figcaption><img src="v4-premium-industrial/screenshots/product-768.png" alt="V4 product tablet"></figure>
+      <figure class="shot"><figcaption class="shot-caption"><span>1440 desktop</span><span>product</span></figcaption><img src="v4-premium-industrial/screenshots/product-1440.png" alt="V4 product desktop"></figure>
+    </div>
+  </div>
+
+  <section class="feedback-cta" style="border-top:1px solid var(--rule);padding:48px 0;margin-top:16px">
+    <p class="eyebrow" style="margin-bottom:8px">Your pick</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,40px);font-weight:700;margin:0 0 12px;letter-spacing:-0.01em">Which direction feels right?</h2>
+    <p style="color:var(--muted);max-width:64ch;margin:0 0 28px;line-height:1.7">Click the button for your preferred theme. It opens your email with the subject pre-filled — add any notes, attach your logo or brand references, and send. If you want something different, use "Request changes."</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;max-width:900px">
+      <a href="mailto:export@shufola.com?cc=afsarctg@gmail.com&subject=Shufola%20theme%20choice%3A%20V1%20Wabi-sabi&body=Hi%20team%2C%0A%0AWe%27d%20like%20to%20proceed%20with%20V1%20%E2%80%94%20Wabi-sabi%20editorial.%0A%0ANotes%20or%20changes%3A%0A%0A%0ABrand%20references%20attached%3A%0A%0A" style="padding:16px 20px;background:#EDE4D3;border:1px solid #A0664A;color:#2A1E12;text-decoration:none;font-weight:600;text-align:center;font-size:14px;letter-spacing:0.02em">Pick V1 &nbsp;—&nbsp; Wabi-sabi</a>
+      <a href="mailto:export@shufola.com?cc=afsarctg@gmail.com&subject=Shufola%20theme%20choice%3A%20V2%20Monochrome%20B%26W&body=Hi%20team%2C%0A%0AWe%27d%20like%20to%20proceed%20with%20V2%20%E2%80%94%20Monochrome%20B%26W%20%2B%20gold.%0A%0ANotes%20or%20changes%3A%0A%0A%0ABrand%20references%20attached%3A%0A%0A" style="padding:16px 20px;background:#F5F2EA;border:1px solid #1A1814;color:#1A1814;text-decoration:none;font-weight:600;text-align:center;font-size:14px;letter-spacing:0.02em">Pick V2 &nbsp;—&nbsp; Monochrome</a>
+      <a href="mailto:export@shufola.com?cc=afsarctg@gmail.com&subject=Shufola%20theme%20choice%3A%20V3%20Magazine-editorial&body=Hi%20team%2C%0A%0AWe%27d%20like%20to%20proceed%20with%20V3%20%E2%80%94%20Magazine-editorial%20heritage.%0A%0ANotes%20or%20changes%3A%0A%0A%0ABrand%20references%20attached%3A%0A%0A" style="padding:16px 20px;background:#F7F1E5;border:1px solid #8A4A2A;color:#1E1A14;text-decoration:none;font-weight:600;text-align:center;font-size:14px;letter-spacing:0.02em">Pick V3 &nbsp;—&nbsp; Magazine</a>
+      <a href="mailto:export@shufola.com?cc=afsarctg@gmail.com&subject=Shufola%20theme%20choice%3A%20V4%20Premium%20industrial&body=Hi%20team%2C%0A%0AWe%27d%20like%20to%20proceed%20with%20V4%20%E2%80%94%20Premium%20industrial%20clean.%0A%0ANotes%20or%20changes%3A%0A%0A%0ABrand%20references%20attached%3A%0A%0A" style="padding:16px 20px;background:#FAFAF8;border:1px solid #4A5159;color:#0F0F0E;text-decoration:none;font-weight:600;text-align:center;font-size:14px;letter-spacing:0.02em">Pick V4 &nbsp;—&nbsp; Industrial</a>
+    </div>
+    <p style="margin:28px 0 0"><a href="mailto:export@shufola.com?cc=afsarctg@gmail.com&subject=Shufola%20theme%20%E2%80%94%20Request%20changes&body=Hi%20team%2C%0A%0ANone%20of%20the%20four%20directions%20feels%20quite%20right.%20Here%27s%20what%20we%27d%20like%20different%3A%0A%0A%0AReferences%20we%27d%20like%20to%20draw%20from%3A%0A%0A" style="color:var(--muted);border-bottom:1px dotted var(--muted);font-size:14px">Request changes or a different direction →</a></p>
+  </section>
+
+  <footer>
+    <p>Once you pick, we move that mockup into production within 24h: Bangla (বাংলা) language mirror, working inquiry form backend, remaining six product-detail pages, your own domain, and analytics. Deployment to Netlify, Cloudflare Pages, or your host of choice.</p>
+    <p>Photography commissioning brief: see <a href="../content/shot-list.md">shot-list.md</a> — 12 photos grouped by priority, with composition and lighting notes for your photographer.</p>
+    <p>Industry reference audit: <a href="../research/industry-scan.md">research/industry-scan.md</a> — peer websites across sesame, Mediterranean olive oil, specialty coffee, and agri-conglomerate classes; what to emulate, what to avoid.</p>
+  </footer>
+</div>
+</body>
+</html>

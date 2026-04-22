@@ -1,0 +1,93 @@
+{
+  "brand": {
+    "legal_name": "Shufola Multi Products Ltd",
+    "short_name": "Shufola",
+    "tagline_line_1": "Pure sesame,",
+    "tagline_italic": "honestly made",
+    "hero_sublabel": "Sesame Oil — Sirajgonj, Bangladesh",
+    "hero_body": "From the fertile plains of Sirajgonj to markets across Asia — we manufacture and export premium sesame oil with the care and traceability that serious buyers expect.",
+    "contact_email": "export@shufola.com"
+  },
+  "locations": [
+    {"id": "head-office", "label": "Head Office — Dhaka", "body": "Commercial operations, buyer relations, export management", "city": "Dhaka"},
+    {"id": "port-office", "label": "Port Office — Chattogram", "body": "Shipping coordination, C&F liaison, documentation", "city": "Chattogram"},
+    {"id": "factory", "label": "Factory — Ullapara", "body": "Oil crushing facility, seed processing, cleaning, drying, and quality laboratory", "city": "Ullapara, Sirajgonj"}
+  ],
+  "stats": [
+    {"id": "destinations", "num": "15+", "label": "Export Destinations"},
+    {"id": "incoterms", "num": "CFR", "label": "Incoterms Capability"},
+    {"id": "payment", "num": "L/C", "label": "Payment Supported"},
+    {"id": "quote", "num": "24h", "label": "Quote Response"}
+  ],
+  "about_paragraphs": [
+    "Shufola Multi Products Ltd is a specialist sesame oil manufacturer and exporter headquartered in Dhaka. Our entire operation is purpose-built around sesame — from procurement through processing to international shipment.",
+    "Our factory in Ullapara, Sirajgonj sits at the heart of one of Bangladesh's most fertile sesame-growing regions. With a port office in Chattogram, we maintain direct control over logistics, documentation, and quality at every stage.",
+    "Every batch is SGS-tested. Every shipment is fully documented. Every buyer gets a focused, expert partner."
+  ],
+  "products": [
+    {
+      "id": "crude-sesame-oil",
+      "num": "01",
+      "name": "Crude Sesame Oil",
+      "short": "Crushed from carefully selected seeds. Deep golden color, rich natural aroma. Our core export product for refineries and food manufacturers.",
+      "tags": ["Oil Crushing", "Bulk Export", "Flexitank"],
+      "is_core": true,
+      "spec": {
+        "moisture_percent_max": "0.2",
+        "ffa_percent_max": "5",
+        "color_lovibond": null,
+        "acidity_percent_max": null,
+        "packaging": ["Flexitank (22 MT)", "Steel drums (190 kg)", "IBC totes (1000 L)"],
+        "moq": null,
+        "incoterms": ["CFR", "FOB", "CIF"],
+        "shelf_life_months": null,
+        "storage": null,
+        "peroxide_value_max": "5",
+        "iodine_value_range": "104-120",
+        "color_description": "Light"
+      },
+      "product_detail_narrative": [
+        "Crude sesame oil is the first pressing from our selected seeds at the Ullapara facility. We hold the cake separately for second-grade applications; the first-press fraction is what ships to international refineries and premium food manufacturers.",
+        "Every batch is tested by SGS Bangladesh for moisture, free fatty acid, acidity, and color before it leaves our warehouse. The certificate of analysis ships with the lot.",
+        "We work in full container loads (FCL) with flexitank as standard; drums and IBC totes available for smaller orders. LC-negotiation and complete export documentation handled in-house."
+      ]
+    },
+    {"id": "refined-sesame-oil", "num": "02", "name": "Refined Sesame Oil", "short": "Crystal-clear with a light, clean taste. Suitable for cooking, food processing, and consumer-grade products.", "tags": ["Food Grade", "Light Color", "Neutral Taste"], "is_core": false},
+    {"id": "brown-sesame-seeds", "num": "03", "name": "Brown Sesame Seeds", "short": "Double-skin variety. Cleaned and dried to optimal moisture levels. Versatile for oil extraction, bakery, and confectionery applications.", "tags": ["Double Skin", "Cleaned & Dried", "Export Ready"], "is_core": false},
+    {"id": "black-sesame-seeds", "num": "04", "name": "Black Sesame Seeds", "short": "Double-skin variety. Cleaned and dried to preserve quality and shelf life. Rich in nutrients, prized in East Asian cuisines and health food markets.", "tags": ["Double Skin", "Cleaned & Dried", "High Nutrition"], "is_core": false},
+    {"id": "yellow-sesame-seeds", "num": "05", "name": "Yellow Sesame Seeds", "short": "Double-skin variety. Cleaned and dried for uniform quality. Mild flavor profile suited for bakery, confectionery, and tahini production.", "tags": ["Double Skin", "Cleaned & Dried", "Mild Flavor"], "is_core": false},
+    {"id": "white-mountain-seeds", "num": "06", "name": "White Mountain Seeds", "short": "Single-skin variety sourced from highland regions. Cleaned and dried. Smooth texture with a delicate nutty flavor for premium food applications.", "tags": ["Single Skin", "Cleaned & Dried", "Premium"], "is_core": false},
+    {"id": "black-mountain-seeds", "num": "07", "name": "Black Mountain Seeds", "short": "Single-skin variety from highland cultivation. Cleaned and dried. Distinctive flavor for specialty and traditional food products.", "tags": ["Single Skin", "Cleaned & Dried", "Specialty"], "is_core": false}
+  ],
+  "process": [
+    {"num": "01", "title": "Seed Sourcing", "body": "Selected from trusted farms across the Sirajgonj sesame belt for premium raw material quality."},
+    {"num": "02", "title": "Cleaning & Drying", "body": "Multi-stage mechanical cleaning followed by drying to optimal moisture levels for quality preservation."},
+    {"num": "03", "title": "Oil Crushing", "body": "Selected seeds crushed to extract crude sesame oil, preserving natural aroma and nutrients."},
+    {"num": "04", "title": "Quality Testing", "body": "SGS-certified laboratory testing for acidity, moisture, color, and purity."},
+    {"num": "05", "title": "Pack & Ship", "body": "Packed in flexitank, drums, or PP oven bags. Full export documentation from LC to Bill of Lading."}
+  ],
+  "certifications": [
+    {"id": "sgs", "label": "SGS Tested"},
+    {"id": "phyto", "label": "Phytosanitary"},
+    {"id": "health", "label": "Health Certificate"},
+    {"id": "origin", "label": "Certificate of Origin"},
+    {"id": "bb", "label": "BB Compliant"}
+  ],
+  "export_capabilities": [
+    {"id": "documentation", "title": "Documentation", "body": "Bill of Lading, Certificate of Origin, Phytosanitary, Health Certificate, and all LC-required documents prepared in-house."},
+    {"id": "shipping", "title": "Shipping", "body": "Partnerships with major shipping lines. Flexitank for oil, standard containers for seeds. Direct access to Chattogram port."},
+    {"id": "banking", "title": "Banking & LC", "body": "Established banking relationships. Expert LC negotiation, amendment handling, and compliance documentation."},
+    {"id": "qa", "title": "Quality Assurance", "body": "Every shipment tested by SGS Bangladesh. Full compliance with buyer specifications and food safety standards."},
+    {"id": "packaging", "title": "Flexible Packaging", "body": "Flexitank, drums, and PP oven bags. Private labeling and custom packaging available on request."},
+    {"id": "service", "title": "End-to-End Service", "body": "From proforma invoice to final shipment — C&F coordination, freight booking, and regulatory compliance."}
+  ],
+  "footer": {
+    "description": "Bangladesh's dedicated sesame oil manufacturer and exporter. Trusted by international buyers for consistent quality and reliable supply.",
+    "columns": [
+      {"title": "Oil Products", "links": [{"label": "Crude Sesame Oil", "href": "#products"}, {"label": "Refined Sesame Oil", "href": "#products"}]},
+      {"title": "Sesame Seeds", "links": [{"label": "Brown Seeds", "href": "#products"}, {"label": "Black Seeds", "href": "#products"}, {"label": "Yellow Seeds", "href": "#products"}, {"label": "Mountain Seeds", "href": "#products"}]},
+      {"title": "Company", "links": [{"label": "About", "href": "#about"}, {"label": "Process", "href": "#process"}, {"label": "Export", "href": "#export"}, {"label": "Contact", "href": "#contact"}]}
+    ],
+    "copyright_locations": "Dhaka · Chattogram · Ullapara"
+  }
+}
