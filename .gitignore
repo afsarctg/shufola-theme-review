@@ -1,21 +1,19 @@
-# Source video (652 MB — CDN-hosted, never committed)
-user-docs/*.mp4
+# Source materials — local-only, never committed
+# (original client assets: .jpeg photos, .mp4 video, .docx specs, reference HTML)
+user-docs/
 
-# Raw .docx source files (not served)
-user-docs/*.docx
+# Raw video files anywhere in the tree (CDN-only)
+*.mp4
 
-# Original JPEG source (WebP copies live under content/assets/)
-user-docs/*.jpeg
-user-docs/*Zone.Identifier
-
-# Placeholder files
-**/.gitkeep
-
-# Sandbox artifact
-preflight-v5.png
-
-# Internal CLAUDE.md (not for public repo)
+# Claude Code internal state
+.claude/
 CLAUDE.md
 
 # Playwright / tool residue
 .playwright-mcp/
+
+# Screenshots at repo root (working artifacts — mockups/*/screenshots/ stay)
+/*.png
+
+# Placeholder files
+**/.gitkeep
