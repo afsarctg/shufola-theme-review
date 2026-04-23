@@ -572,20 +572,89 @@ h1, h2, h3, h4 {
 
 .vid-frame {
   margin-top: 48px;
-  height: clamp(240px, 38vw, 460px);
+  height: clamp(240px, 38vw, 540px);
   background: var(--charcoal-warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   border: 1px solid var(--earth-soft);
+  overflow: hidden;
 }
 
-.vid-frame span {
+.vid-lite {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: var(--charcoal-warm);
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+.vid-lite img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1.05);
+  transition: filter 0.4s, transform 0.6s;
+}
+
+.vid-lite:hover img { filter: brightness(0.85) contrast(1.05); transform: scale(1.02); }
+
+.vid-lite::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 86px;
+  height: 86px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(184, 152, 64, 0.92);
+  border: 1px solid rgba(245, 235, 220, 0.35);
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+.vid-lite:hover::after { background: var(--ochre); transform: translate(-50%, -50%) scale(1.06); }
+
+.vid-lite-tri {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 4px);
+  transform: translate(-50%, -50%);
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent var(--charcoal);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.vid-lite-cap {
+  position: absolute;
+  bottom: 18px;
+  left: 22px;
   font-family: 'Cormorant', serif;
-  font-size: 17px;
+  font-size: 14px;
   font-style: italic;
-  color: rgba(255,255,255,0.25);
+  color: var(--linen);
+  letter-spacing: 0.5px;
+  background: rgba(30, 23, 16, 0.55);
+  padding: 6px 14px;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.vid-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* ─── PROCESS ─── */
@@ -1137,11 +1206,15 @@ h1, h2, h3, h4 {
   </div>
 </div></section>
 
-<section class="vid-sec">
-  <p class="sec-label reveal">Our Process</p>
+<section class="vid-sec" id="vid">
+  <p class="sec-label reveal">Facility Tour</p>
   <h2 class="reveal">From source <em>to export</em></h2>
-  <div class="vid-frame reveal">
-    <span>Corporate video — coming soon</span>
+  <div class="vid-frame reveal" data-yt="VrTpPwfgUlw">
+    <button type="button" class="vid-lite" aria-label="Play facility tour video" onclick="(function(b){const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/VrTpPwfgUlw?autoplay=1&rel=0&modestbranding=1&playsinline=1';f.title='Shufola facility tour';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;b.parentNode.replaceChild(f,b);})(this)">
+      <img src="https://i.ytimg.com/vi/VrTpPwfgUlw/maxresdefault.jpg" alt="Inside the Shufola sesame oil facility — Ullapara, Sirajgonj" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/VrTpPwfgUlw/hqdefault.jpg';">
+      <span class="vid-lite-tri" aria-hidden="true"></span>
+      <span class="vid-lite-cap">Facility tour — Ullapara, Sirajgonj</span>
+    </button>
   </div>
 </section>
 
